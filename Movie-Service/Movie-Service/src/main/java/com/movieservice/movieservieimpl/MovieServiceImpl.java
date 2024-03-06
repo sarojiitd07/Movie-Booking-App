@@ -113,6 +113,4 @@ public class MovieServiceImpl implements MovieService{
 		return movieBookingStatus;
 	}
 
-
-
 }

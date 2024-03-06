@@ -6,7 +6,8 @@ import org.springframework.web.bind.annotation.PathVariable;
 
 import com.movieservice.entity.Customer;
 
-@FeignClient(url = "http://localhost:9091", value = "Customer-Client")
+//@FeignClient(url = "http://localhost:9091", value = "Customer-Client")
+@FeignClient(name="USER-SERVICE")
 public interface CustomerClient {
 
 	@GetMapping(value = "/customer/{customerId}")
